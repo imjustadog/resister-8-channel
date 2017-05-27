@@ -172,12 +172,14 @@ void __attribute__((interrupt,no_auto_psv)) _T6Interrupt(void)  // 1ms interrupt
         count_reset ++;
         Tick_60S = 0;
 	}
-	if(count_reset >= 30)
+	if(count_reset >= 15)
 	{	
 		Nrest=0;
-		DELAY(1000);
+		DELAY(5000);
 		Nrest=1;
+		DELAY(5000);
 		count_reset = 0;
+		UART2_Send("reset",5);
 	}	
 }
 
@@ -218,7 +220,8 @@ void __attribute__((interrupt,no_auto_psv)) _U1RXInterrupt(void)
 		STAT = 1;
 		speed = 'l';
 		flag_ascii_or_bin = 'b';
-	    uart1_enable =1;	
+	    uart1_enable =1;
+		count_reset = 0;	
 	}//if(i==16)
 
 	else if( (i==16)&&(data[2]==0X03)&&(data[3]==0X04)&&(data[0]=='S') )
@@ -226,7 +229,8 @@ void __attribute__((interrupt,no_auto_psv)) _U1RXInterrupt(void)
 		STAT = 1;
 		speed = 'h';
 		flag_ascii_or_bin = 'b';
-	    uart1_enable =1;	
+	    uart1_enable =1;
+		count_reset = 0;	
 	}//if(i==16)	
 	else if( (i==16)&&(data[2]==0X11)&&(data[3]==0X12)&&(data[0]=='S') )
 	{	
