@@ -46,7 +46,7 @@ _FPOR(0xE7);
 MIAN_ID与IP地址的最后两位对应
 **********/
 #define BOARD_NUM 1 // Number of board
-unsigned char MAIN_ID = 0x20;
+unsigned char MAIN_ID = 0x21;
 
 int count_reset = 0; 
 
@@ -80,6 +80,7 @@ unsigned int temp[BOARD_NUM][8]; // Temperature
 unsigned char res[16]; 
 int res_y[8][3];
 int res_x[8][3]; 
+int zero[8] = {0,0,0,0,0,0,0,0};
  
 unsigned char work_enable = 0;//采集模块工作使能位
 unsigned char send_enable = 0;
@@ -87,6 +88,7 @@ unsigned char uart2_enable = 0;//串口使能位
 unsigned char uart1_enable = 0;//网口使能位
 
 unsigned char speed = 'l';
+unsigned char flag_tozero = 0;
 
 void DELAY(unsigned int t)//t=1 6us
 {
@@ -247,6 +249,10 @@ void __attribute__((interrupt,no_auto_psv)) _U1RXInterrupt(void)
 		flag_ascii_or_bin = 'b';
 	    uart1_enable =0;	
 	}//if(i==16)	
+	else if( (i==16)&&(data[2]==0X05)&&(data[3]==0X06)&&(data[0]=='S') )
+	{	
+		flag_tozero = 1;	
+	}//if(i==16)
 
 	return;	
 }//
@@ -328,6 +334,10 @@ void __attribute__((interrupt,no_auto_psv)) _U2RXInterrupt(void)
 				uart2_enable =0;
 				flag_ascii_or_bin = 'b';	
 			}
+			else if((i==16)&&(receive_buf[2]==0X05)&&(receive_buf[3]==0X06)) 
+			{	
+				flag_tozero = 1;	
+			}
 
 		}
 		
@@ -386,12 +396,12 @@ void __attribute__((interrupt,no_auto_psv)) _U2RXInterrupt(void)
 
 int main()
 {
-	int p;
+	int p,z;
 	int i = 1000; // 扫频频率 473Hz~7.042kHz
 	int k,j;
 	int n,m;
 	int s=0;
-	int temp1;
+	int temp;
 	unsigned char year,month,day,hour,minute,second;
     unsigned int humi_val_i,temp_val_i;
 	unsigned char error,checksum;
@@ -501,6 +511,16 @@ int main()
 			work_enable = 0;
 		}
 
+		if(flag_tozero == 1) 
+		{	
+	        CLRWDT
+			for(z = 0;z < 8;z ++)
+			{
+				zero[z] = 0.117582 * res_y[z][0];
+			}
+			flag_tozero = 0;
+		}
+
 		if(send_enable == 1)
 		{
 	        /*error=0;
@@ -519,8 +539,9 @@ int main()
 
 			for(n = 0;n < 8;n ++)
 			{
-				send_data[s] = res_y[n][0] >> 8;s++;
-				send_data[s] = res_y[n][0] & 0x00FF ;s++;
+				temp = 0.117582 * res_y[n][0] - zero[n];
+				send_data[s] = temp >> 8;s++;
+				send_data[s] = temp & 0x00FF ;s++;
 			}
 
 			send_data[s] = humi_val_i>>8;s++;
