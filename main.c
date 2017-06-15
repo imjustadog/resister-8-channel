@@ -46,7 +46,7 @@ _FPOR(0xE7);
 MIAN_ID与IP地址的最后两位对应
 **********/
 #define BOARD_NUM 1 // Number of board
-unsigned char MAIN_ID = 0x21;
+unsigned char MAIN_ID = 0x22;
 
 int count_reset = 0; 
 
@@ -128,11 +128,17 @@ int count_5 = 0;
 int count_10 = 0;
 int count_50 = 0;
 int count_100 = 0;
-
+unsigned int Tick_sys = 0;
 void __attribute__((interrupt,no_auto_psv)) _T6Interrupt(void)  // 1ms interrupt
 {
 	IFS2bits.T6IF = 0;
     count_5 ++;
+	Tick_sys++;	
+	if(Tick_sys >= 1000)
+	{
+		Tick_sys = 0;
+		FAIL = ~FAIL;
+	}
 
 	if(speed == 'h')
 	{
@@ -423,7 +429,7 @@ int main()
     WORK=1;//COMMM1
     STAT=0;
     COMM=0;//COMMM1
-    FAIL=0;
+    FAIL=1;
     Nrest=1;//
 	InitTimer6();  //// Timer6 提供0.8s中断定时
     StartTimer6();
@@ -558,6 +564,7 @@ int main()
 			}
 			if(uart1_enable ==1)
    	        {
+				COMM = ~COMM;
    	        	UART1_Send(send_data,s);
    	        }	
 	
