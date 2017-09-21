@@ -85,7 +85,7 @@ int zero[8] = {0,0,0,0,0,0,0,0};
 unsigned char work_enable = 0;//采集模块工作使能位
 unsigned char send_enable = 0;
 unsigned char uart2_enable = 0;//串口使能位
-unsigned char uart1_enable = 0;//网口使能位
+unsigned char uart1_enable = 1;//网口使能位
 
 unsigned char speed = 'l';
 unsigned char flag_tozero = 0;
@@ -138,6 +138,7 @@ void __attribute__((interrupt,no_auto_psv)) _T6Interrupt(void)  // 1ms interrupt
 	{
 		Tick_sys = 0;
 		FAIL = ~FAIL;
+		WORK = FAIL;
 	}
 
 	if(speed == 'h')
@@ -225,7 +226,7 @@ void __attribute__((interrupt,no_auto_psv)) _U1RXInterrupt(void)
 	
 	if( (i==16)&&(data[2]==0X01)&&(data[3]==0X02)&&(data[0]=='S') )
 	{	
-		STAT = 1;
+		COMM = 1;
 		speed = 'l';
 		flag_ascii_or_bin = 'b';
 	    uart1_enable =1;
@@ -234,7 +235,7 @@ void __attribute__((interrupt,no_auto_psv)) _U1RXInterrupt(void)
 
 	else if( (i==16)&&(data[2]==0X03)&&(data[3]==0X04)&&(data[0]=='S') )
 	{	
-		STAT = 1;
+		COMM = 1;
 		speed = 'h';
 		flag_ascii_or_bin = 'b';
 	    uart1_enable =1;
@@ -242,7 +243,7 @@ void __attribute__((interrupt,no_auto_psv)) _U1RXInterrupt(void)
 	}//if(i==16)	
 	else if( (i==16)&&(data[2]==0X11)&&(data[3]==0X12)&&(data[0]=='S') )
 	{	
-		STAT = 0;
+		COMM = 0;
 		speed = 'l';
 		flag_ascii_or_bin = 'b';
 	    uart1_enable =0;	
@@ -250,7 +251,7 @@ void __attribute__((interrupt,no_auto_psv)) _U1RXInterrupt(void)
 
 	else if( (i==16)&&(data[2]==0X13)&&(data[3]==0X14)&&(data[0]=='S') )
 	{	
-		STAT = 0;
+		COMM = 0;
 		speed = 'h';
 		flag_ascii_or_bin = 'b';
 	    uart1_enable =0;	
@@ -259,6 +260,17 @@ void __attribute__((interrupt,no_auto_psv)) _U1RXInterrupt(void)
 	{	
 		flag_tozero = 1;	
 	}//if(i==16)
+	else if( (i==16)&&(data[2]==0X07)&&(data[3]==0X08)&&(data[0]=='S') )
+	{
+		IEC1bits.U2RXIE = 0; // Enable UART2 RX interrupt
+        IEC1bits.U2TXIE = 0;
+		IEC0bits.U1RXIE = 0; //  Enable UART1 RX interrupt
+		IEC0bits.U1TXIE = 0;
+		IEC2bits.T6IE = 0;
+		IEC2bits.C1IE=0;
+		C1INTEbits.RBIE=0;
+		while(1); //饿狗，让狗来重启
+	}
 
 	return;	
 }//
@@ -522,7 +534,7 @@ int main()
 	        CLRWDT
 			for(z = 0;z < 8;z ++)
 			{
-				zero[z] = 0.117582 * res_y[z][0];
+				zero[z] = 0.23563622 * res_y[z][0];
 			}
 			flag_tozero = 0;
 		}
@@ -545,7 +557,7 @@ int main()
 
 			for(n = 0;n < 8;n ++)
 			{
-				temp = 0.117582 * res_y[n][0] - zero[n];
+				temp = 0.23563622 * res_y[n][0] - zero[n];
 				send_data[s] = temp >> 8;s++;
 				send_data[s] = temp & 0x00FF ;s++;
 			}
@@ -564,7 +576,7 @@ int main()
 			}
 			if(uart1_enable ==1)
    	        {
-				COMM = ~COMM;
+				STAT = ~STAT;
    	        	UART1_Send(send_data,s);
    	        }	
 	

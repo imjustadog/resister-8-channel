@@ -34,6 +34,7 @@ void InitLTC1859()
 
 	IFS2bits.SPI2IF = 0; // Clear the Interrupt Flag
 	IEC2bits.SPI2IE = 0; // Disable the Interrupt
+	IEC2bits.SPI2EIE = 0; // Disable the Interrupt
 	// SPI1CON1 Register Settings
 	SPI2CON1bits.PPRE = 2; // 4:1 primary prescale
 	SPI2CON1bits.SPRE = 7; // 1:1 secondary prescale
@@ -87,6 +88,7 @@ void ReadWriteLTC1859_1(int num)
 	asm("nop");
 	
     ADC_RDn1 = 1;
+	SPI2STATbits.SPIROV = 0; //clear overflow
 }
 
 void ReadWriteLTC1859_2(int num)
@@ -114,4 +116,5 @@ void ReadWriteLTC1859_2(int num)
 	asm("nop");
 	
     ADC_RDn2 = 1;
+	SPI2STATbits.SPIROV = 0; //clear overflow
 }

@@ -6,170 +6,171 @@
 !_TAG_PROGRAM_VERSION	5.5.4	//
 !_TAG_REVISION_NAME	MCHPTags	//
 !_TAG_REVISION_VERSION	6.0.1	//
-ACK::1	C:\Users\zwq\Desktop\resister\collect.h	33;"	d	line:33
-ADC_BUSYn1::PORTBbits.RB5	C:\Users\zwq\Desktop\resister\spi.h	3;"	d	line:3
-ADC_BUSYn2::PORTBbits.RB1	C:\Users\zwq\Desktop\resister\spi.h	7;"	d	line:7
-ADC_CONV1::LATCbits.LATC1	C:\Users\zwq\Desktop\resister\spi.h	1;"	d	line:1
-ADC_CONV2::LATBbits.LATB3	C:\Users\zwq\Desktop\resister\spi.h	5;"	d	line:5
-ADC_RDn1::LATCbits.LATC2	C:\Users\zwq\Desktop\resister\spi.h	2;"	d	line:2
-ADC_RDn2::LATBbits.LATB2	C:\Users\zwq\Desktop\resister\spi.h	6;"	d	line:6
-BOARD_NUM::1	C:\Users\zwq\Desktop\resister\main.c	48;"	d	line:48	file:
-C1	C:\Users\zwq\Desktop\resister\collect.c	303;"	l	line:303
-C2	C:\Users\zwq\Desktop\resister\collect.c	304;"	l	line:304
-C3	C:\Users\zwq\Desktop\resister\collect.c	305;"	l	line:305
-CLRWDT::{__asm__volatile("CLRWDT");}	C:\Users\zwq\Desktop\resister\main.c	21;"	d	line:21	file:
-COMM::LATCbits.LATC14	C:\Users\zwq\Desktop\resister\main.c	30;"	d	line:30	file:
-D1::0	C:\Users\zwq\Desktop\resister\main.c	66;"	d	line:66	file:
-D2::0	C:\Users\zwq\Desktop\resister\main.c	67;"	d	line:67	file:
-DATA::PORTGbits.RG3	C:\Users\zwq\Desktop\resister\collect.h	20;"	d	line:20
-DELAY	C:\Users\zwq\Desktop\resister\main.c	93;"	f	line:93	signature:(unsigned int t)
-FAIL::LATDbits.LATD11	C:\Users\zwq\Desktop\resister\main.c	36;"	d	line:36	file:
-HUMI	C:\Users\zwq\Desktop\resister\collect.h	34;"	e	line:34
-InitLTC1859	C:\Users\zwq\Desktop\resister\spi.c	21;"	f	line:21
-InitLTC1859	C:\Users\zwq\Desktop\resister\spi.h	9;"	p	line:9	signature:()
-InitSCI	C:\Users\zwq\Desktop\resister\sci.c	9;"	f	line:9
-InitSCI	C:\Users\zwq\Desktop\resister\sci.h	1;"	p	line:1	signature:()
-InitTimer2	C:\Users\zwq\Desktop\resister\timer.c	32;"	f	line:32
-InitTimer2	C:\Users\zwq\Desktop\resister\timer.h	10;"	p	line:10	signature:()
-InitTimer6	C:\Users\zwq\Desktop\resister\timer.c	9;"	f	line:9
-InitTimer6	C:\Users\zwq\Desktop\resister\timer.h	7;"	p	line:7	signature:()
-MAIN_ID	C:\Users\zwq\Desktop\resister\main.c	49;"	v	line:49
-MEASURE_HUMI::0x05	C:\Users\zwq\Desktop\resister\collect.h	42;"	d	line:42
-MEASURE_TEMP::0x03	C:\Users\zwq\Desktop\resister\collect.h	41;"	d	line:41
-N0::1	C:\Users\zwq\Desktop\resister\main.c	62;"	d	line:62	file:
-N1::0	C:\Users\zwq\Desktop\resister\main.c	63;"	d	line:63	file:
-N2::0	C:\Users\zwq\Desktop\resister\main.c	64;"	d	line:64	file:
-Nrest::LATFbits.LATF6	C:\Users\zwq\Desktop\resister\main.c	43;"	d	line:43	file:
-OSCCON	C:\Users\zwq\Desktop\resister\main.c	411;"	l	line:411
-RESET::0x1e	C:\Users\zwq\Desktop\resister\collect.h	43;"	d	line:43
-ReadWriteLTC1859_1	C:\Users\zwq\Desktop\resister\spi.c	65;"	f	line:65	signature:(int num)
-ReadWriteLTC1859_1	C:\Users\zwq\Desktop\resister\spi.h	10;"	p	line:10	signature:(int)
-ReadWriteLTC1859_2	C:\Users\zwq\Desktop\resister\spi.c	92;"	f	line:92	signature:(int num)
-ReadWriteLTC1859_2	C:\Users\zwq\Desktop\resister\spi.h	11;"	p	line:11	signature:(int)
-SCK::PORTGbits.RG2	C:\Users\zwq\Desktop\resister\collect.h	22;"	d	line:22
-STAT::LATDbits.LATD0	C:\Users\zwq\Desktop\resister\main.c	34;"	d	line:34	file:
-STATUS_REG_R::0x07	C:\Users\zwq\Desktop\resister\collect.h	40;"	d	line:40
-STATUS_REG_W::0x06	C:\Users\zwq\Desktop\resister\collect.h	39;"	d	line:39
-StartTimer2	C:\Users\zwq\Desktop\resister\timer.c	42;"	f	line:42
-StartTimer2	C:\Users\zwq\Desktop\resister\timer.h	11;"	p	line:11	signature:()
-StartTimer6	C:\Users\zwq\Desktop\resister\timer.c	21;"	f	line:21
-StartTimer6	C:\Users\zwq\Desktop\resister\timer.h	8;"	p	line:8	signature:()
-StopTimer2	C:\Users\zwq\Desktop\resister\timer.c	49;"	f	line:49
-StopTimer2	C:\Users\zwq\Desktop\resister\timer.h	12;"	p	line:12	signature:()
-StopTimer6	C:\Users\zwq\Desktop\resister\timer.c	27;"	f	line:27
-StopTimer6	C:\Users\zwq\Desktop\resister\timer.h	9;"	p	line:9	signature:()
-T1	C:\Users\zwq\Desktop\resister\collect.c	306;"	l	line:306
-T2	C:\Users\zwq\Desktop\resister\collect.c	307;"	l	line:307
-TEMP	C:\Users\zwq\Desktop\resister\collect.h	34;"	e	line:34
-TRIS_DATA::TRISGbits.TRISG3	C:\Users\zwq\Desktop\resister\collect.h	21;"	d	line:21
-TRIS_SCK::TRISGbits.TRISG2	C:\Users\zwq\Desktop\resister\collect.h	23;"	d	line:23
-Tick_60S	C:\Users\zwq\Desktop\resister\main.c	126;"	v	line:126
-UART1_Send	C:\Users\zwq\Desktop\resister\main.c	115;"	f	line:115	signature:(unsigned char str[], int len)
-UART2_Send	C:\Users\zwq\Desktop\resister\main.c	105;"	f	line:105	signature:(unsigned char str[], int len)
-UART_Timeout	C:\Users\zwq\Desktop\resister\main.c	198;"	l	line:198
-UART_Timeout	C:\Users\zwq\Desktop\resister\main.c	273;"	l	line:273
-WORK::LATCbits.LATC13	C:\Users\zwq\Desktop\resister\main.c	32;"	d	line:32	file:
-_T6Interrupt	C:\Users\zwq\Desktop\resister\main.c	132;"	f	line:132	signature:(void)
-_U1RXInterrupt	C:\Users\zwq\Desktop\resister\main.c	194;"	f	line:194	signature:(void)
-_U2RXInterrupt	C:\Users\zwq\Desktop\resister\main.c	271;"	f	line:271	signature:(void)
-_collect_h	C:\Users\zwq\Desktop\resister\collect.h	2;"	d	line:2
-calc_sth11	C:\Users\zwq\Desktop\resister\collect.c	301;"	f	line:301	signature:(float *p_humidity ,float *p_temperature)
-calc_sth11	C:\Users\zwq\Desktop\resister\collect.h	53;"	p	line:53	signature:(float *p_humidity ,float *p_temperature)
-checksum	C:\Users\zwq\Desktop\resister\main.c	407;"	l	line:407
-count_10	C:\Users\zwq\Desktop\resister\main.c	128;"	v	line:128
-count_100	C:\Users\zwq\Desktop\resister\main.c	130;"	v	line:130
-count_5	C:\Users\zwq\Desktop\resister\main.c	127;"	v	line:127
-count_50	C:\Users\zwq\Desktop\resister\main.c	129;"	v	line:129
-count_reset	C:\Users\zwq\Desktop\resister\main.c	51;"	v	line:51
-d_h	C:\Users\zwq\Desktop\resister\collect.c	254;"	l	line:254
-d_l	C:\Users\zwq\Desktop\resister\collect.c	254;"	l	line:254
-dat	C:\Users\zwq\Desktop\resister\main.c	275;"	l	line:275
-data	C:\Users\zwq\Desktop\resister\main.c	197;"	l	line:197
-day	C:\Users\zwq\Desktop\resister\main.c	405;"	l	line:405
-delay_cvt	C:\Users\zwq\Desktop\resister\spi.c	12;"	f	line:12
-error	C:\Users\zwq\Desktop\resister\collect.c	109;"	l	line:109
-error	C:\Users\zwq\Desktop\resister\collect.c	220;"	l	line:220
-error	C:\Users\zwq\Desktop\resister\collect.c	235;"	l	line:235
-error	C:\Users\zwq\Desktop\resister\collect.c	245;"	l	line:245
-error	C:\Users\zwq\Desktop\resister\collect.c	255;"	l	line:255
-error	C:\Users\zwq\Desktop\resister\main.c	407;"	l	line:407
-fen	C:\Users\zwq\Desktop\resister\main.c	200;"	l	line:200
-flag_ascii_or_bin	C:\Users\zwq\Desktop\resister\main.c	72;"	v	line:72
-flag_tozero	C:\Users\zwq\Desktop\resister\main.c	91;"	v	line:91
-freq	C:\Users\zwq\Desktop\resister\main.c	74;"	v	line:74
-hour	C:\Users\zwq\Desktop\resister\main.c	405;"	l	line:405
-humi_val_i	C:\Users\zwq\Desktop\resister\main.c	406;"	l	line:406
-i	C:\Users\zwq\Desktop\resister\collect.c	109;"	l	line:109
-i	C:\Users\zwq\Desktop\resister\collect.c	163;"	l	line:163
-i	C:\Users\zwq\Desktop\resister\collect.c	256;"	l	line:256
-i	C:\Users\zwq\Desktop\resister\collect.c	78;"	l	line:78
-i	C:\Users\zwq\Desktop\resister\main.c	107;"	l	line:107
-i	C:\Users\zwq\Desktop\resister\main.c	117;"	l	line:117
-i	C:\Users\zwq\Desktop\resister\main.c	199;"	l	line:199
-i	C:\Users\zwq\Desktop\resister\main.c	274;"	l	line:274
-i	C:\Users\zwq\Desktop\resister\main.c	400;"	l	line:400
-i	C:\Users\zwq\Desktop\resister\main.c	95;"	l	line:95
-i	C:\Users\zwq\Desktop\resister\spi.c	14;"	l	line:14
-index	C:\Users\zwq\Desktop\resister\spi.c	67;"	l	line:67
-index	C:\Users\zwq\Desktop\resister\spi.c	94;"	l	line:94
-j	C:\Users\zwq\Desktop\resister\main.c	401;"	l	line:401
-j	C:\Users\zwq\Desktop\resister\main.c	95;"	l	line:95
-k	C:\Users\zwq\Desktop\resister\main.c	401;"	l	line:401
-lq	C:\Users\zwq\Desktop\resister\main.c	74;"	v	line:74
-m	C:\Users\zwq\Desktop\resister\main.c	402;"	l	line:402
-main	C:\Users\zwq\Desktop\resister\main.c	397;"	f	line:397
-miao	C:\Users\zwq\Desktop\resister\main.c	200;"	l	line:200
-minute	C:\Users\zwq\Desktop\resister\main.c	405;"	l	line:405
-month	C:\Users\zwq\Desktop\resister\main.c	405;"	l	line:405
-n	C:\Users\zwq\Desktop\resister\main.c	402;"	l	line:402
-nian	C:\Users\zwq\Desktop\resister\main.c	200;"	l	line:200
-noACK::0	C:\Users\zwq\Desktop\resister\collect.h	32;"	d	line:32
-p	C:\Users\zwq\Desktop\resister\main.c	399;"	l	line:399
-read_temp	C:\Users\zwq\Desktop\resister\main.c	408;"	l	line:408
-receive_buf	C:\Users\zwq\Desktop\resister\main.c	276;"	l	line:276
-res	C:\Users\zwq\Desktop\resister\main.c	80;"	v	line:80
-res_x	C:\Users\zwq\Desktop\resister\main.c	82;"	v	line:82
-res_y	C:\Users\zwq\Desktop\resister\main.c	81;"	v	line:81
-rh	C:\Users\zwq\Desktop\resister\collect.c	308;"	l	line:308
-rh_lin	C:\Users\zwq\Desktop\resister\collect.c	310;"	l	line:310
-rh_true	C:\Users\zwq\Desktop\resister\collect.c	311;"	l	line:311
-ri	C:\Users\zwq\Desktop\resister\main.c	200;"	l	line:200
-s	C:\Users\zwq\Desktop\resister\main.c	403;"	l	line:403
-s_connectionreset	C:\Users\zwq\Desktop\resister\collect.c	76;"	f	line:76	signature:(void)
-s_connectionreset	C:\Users\zwq\Desktop\resister\collect.h	48;"	p	line:48	signature:(void)
-s_measure	C:\Users\zwq\Desktop\resister\collect.c	252;"	f	line:252	signature:(unsigned char *p_value, unsigned char *p_checksum, unsigned char mode)
-s_measure	C:\Users\zwq\Desktop\resister\collect.h	52;"	p	line:52	signature:(unsigned char *p_value, unsigned char *p_checksum, unsigned char mode)
-s_read_byte	C:\Users\zwq\Desktop\resister\collect.c	161;"	f	line:161	signature:(unsigned char ack)
-s_read_byte	C:\Users\zwq\Desktop\resister\collect.h	46;"	p	line:46	signature:(unsigned char ack)
-s_read_statusreg	C:\Users\zwq\Desktop\resister\collect.c	233;"	f	line:233	signature:(unsigned char *p_value, unsigned char *p_checksum)
-s_read_statusreg	C:\Users\zwq\Desktop\resister\collect.h	50;"	p	line:50	signature:(unsigned char *p_value, unsigned char *p_checksum)
-s_softreset	C:\Users\zwq\Desktop\resister\collect.c	218;"	f	line:218	signature:(void)
-s_softreset	C:\Users\zwq\Desktop\resister\collect.h	49;"	p	line:49	signature:(void)
-s_transstart	C:\Users\zwq\Desktop\resister\collect.c	18;"	f	line:18	signature:(void)
-s_transstart	C:\Users\zwq\Desktop\resister\collect.h	47;"	p	line:47	signature:(void)
-s_write_byte	C:\Users\zwq\Desktop\resister\collect.c	107;"	f	line:107	signature:(unsigned char value)
-s_write_byte	C:\Users\zwq\Desktop\resister\collect.h	45;"	p	line:45	signature:(unsigned char value)
-s_write_statusreg	C:\Users\zwq\Desktop\resister\collect.c	243;"	f	line:243	signature:(unsigned char *p_value)
-s_write_statusreg	C:\Users\zwq\Desktop\resister\collect.h	51;"	p	line:51	signature:(unsigned char *p_value)
-second	C:\Users\zwq\Desktop\resister\main.c	405;"	l	line:405
-send_ascii	C:\Users\zwq\Desktop\resister\main.c	70;"	v	line:70
-send_data	C:\Users\zwq\Desktop\resister\main.c	69;"	v	line:69
-send_enable	C:\Users\zwq\Desktop\resister\main.c	86;"	v	line:86
-shi	C:\Users\zwq\Desktop\resister\main.c	200;"	l	line:200
-speed	C:\Users\zwq\Desktop\resister\main.c	90;"	v	line:90
-start_judge	C:\Users\zwq\Desktop\resister\main.c	269;"	v	line:269
-t	C:\Users\zwq\Desktop\resister\collect.c	309;"	l	line:309
-t_C	C:\Users\zwq\Desktop\resister\collect.c	312;"	l	line:312
-temp	C:\Users\zwq\Desktop\resister\main.c	404;"	l	line:404
-temp	C:\Users\zwq\Desktop\resister\main.c	78;"	v	line:78
-temp_freq	C:\Users\zwq\Desktop\resister\main.c	76;"	v	line:76
-temp_val_i	C:\Users\zwq\Desktop\resister\main.c	406;"	l	line:406
-tick	C:\Users\zwq\Desktop\resister\main.c	125;"	v	line:125
-uart1_enable	C:\Users\zwq\Desktop\resister\main.c	88;"	v	line:88
-uart2_enable	C:\Users\zwq\Desktop\resister\main.c	87;"	v	line:87
-val	C:\Users\zwq\Desktop\resister\collect.c	163;"	l	line:163
-work_enable	C:\Users\zwq\Desktop\resister\main.c	85;"	v	line:85
-year	C:\Users\zwq\Desktop\resister\main.c	405;"	l	line:405
-yue	C:\Users\zwq\Desktop\resister\main.c	200;"	l	line:200
-z	C:\Users\zwq\Desktop\resister\main.c	399;"	l	line:399
-zero	C:\Users\zwq\Desktop\resister\main.c	83;"	v	line:83
+ACK::1	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.h	33;"	d	line:33
+ADC_BUSYn1::PORTBbits.RB5	C:\Users\zwq\Desktop\hongfu\centre\resister\spi.h	3;"	d	line:3
+ADC_BUSYn2::PORTBbits.RB1	C:\Users\zwq\Desktop\hongfu\centre\resister\spi.h	7;"	d	line:7
+ADC_CONV1::LATCbits.LATC1	C:\Users\zwq\Desktop\hongfu\centre\resister\spi.h	1;"	d	line:1
+ADC_CONV2::LATBbits.LATB3	C:\Users\zwq\Desktop\hongfu\centre\resister\spi.h	5;"	d	line:5
+ADC_RDn1::LATCbits.LATC2	C:\Users\zwq\Desktop\hongfu\centre\resister\spi.h	2;"	d	line:2
+ADC_RDn2::LATBbits.LATB2	C:\Users\zwq\Desktop\hongfu\centre\resister\spi.h	6;"	d	line:6
+BOARD_NUM::1	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	48;"	d	line:48	file:
+C1	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	303;"	l	line:303
+C2	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	304;"	l	line:304
+C3	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	305;"	l	line:305
+CLRWDT::{__asm__volatile("CLRWDT");}	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	21;"	d	line:21	file:
+COMM::LATCbits.LATC14	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	30;"	d	line:30	file:
+D1::0	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	66;"	d	line:66	file:
+D2::0	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	67;"	d	line:67	file:
+DATA::PORTGbits.RG3	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.h	20;"	d	line:20
+DELAY	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	93;"	f	line:93	signature:(unsigned int t)
+FAIL::LATDbits.LATD11	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	36;"	d	line:36	file:
+HUMI	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.h	34;"	e	line:34
+InitLTC1859	C:\Users\zwq\Desktop\hongfu\centre\resister\spi.c	21;"	f	line:21
+InitLTC1859	C:\Users\zwq\Desktop\hongfu\centre\resister\spi.h	9;"	p	line:9	signature:()
+InitSCI	C:\Users\zwq\Desktop\hongfu\centre\resister\sci.c	9;"	f	line:9
+InitSCI	C:\Users\zwq\Desktop\hongfu\centre\resister\sci.h	1;"	p	line:1	signature:()
+InitTimer2	C:\Users\zwq\Desktop\hongfu\centre\resister\timer.c	32;"	f	line:32
+InitTimer2	C:\Users\zwq\Desktop\hongfu\centre\resister\timer.h	10;"	p	line:10	signature:()
+InitTimer6	C:\Users\zwq\Desktop\hongfu\centre\resister\timer.c	9;"	f	line:9
+InitTimer6	C:\Users\zwq\Desktop\hongfu\centre\resister\timer.h	7;"	p	line:7	signature:()
+MAIN_ID	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	49;"	v	line:49
+MEASURE_HUMI::0x05	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.h	42;"	d	line:42
+MEASURE_TEMP::0x03	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.h	41;"	d	line:41
+N0::1	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	62;"	d	line:62	file:
+N1::0	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	63;"	d	line:63	file:
+N2::0	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	64;"	d	line:64	file:
+Nrest::LATFbits.LATF6	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	43;"	d	line:43	file:
+OSCCON	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	429;"	l	line:429
+RESET::0x1e	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.h	43;"	d	line:43
+ReadWriteLTC1859_1	C:\Users\zwq\Desktop\hongfu\centre\resister\spi.c	66;"	f	line:66	signature:(int num)
+ReadWriteLTC1859_1	C:\Users\zwq\Desktop\hongfu\centre\resister\spi.h	10;"	p	line:10	signature:(int)
+ReadWriteLTC1859_2	C:\Users\zwq\Desktop\hongfu\centre\resister\spi.c	94;"	f	line:94	signature:(int num)
+ReadWriteLTC1859_2	C:\Users\zwq\Desktop\hongfu\centre\resister\spi.h	11;"	p	line:11	signature:(int)
+SCK::PORTGbits.RG2	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.h	22;"	d	line:22
+STAT::LATDbits.LATD0	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	34;"	d	line:34	file:
+STATUS_REG_R::0x07	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.h	40;"	d	line:40
+STATUS_REG_W::0x06	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.h	39;"	d	line:39
+StartTimer2	C:\Users\zwq\Desktop\hongfu\centre\resister\timer.c	42;"	f	line:42
+StartTimer2	C:\Users\zwq\Desktop\hongfu\centre\resister\timer.h	11;"	p	line:11	signature:()
+StartTimer6	C:\Users\zwq\Desktop\hongfu\centre\resister\timer.c	21;"	f	line:21
+StartTimer6	C:\Users\zwq\Desktop\hongfu\centre\resister\timer.h	8;"	p	line:8	signature:()
+StopTimer2	C:\Users\zwq\Desktop\hongfu\centre\resister\timer.c	49;"	f	line:49
+StopTimer2	C:\Users\zwq\Desktop\hongfu\centre\resister\timer.h	12;"	p	line:12	signature:()
+StopTimer6	C:\Users\zwq\Desktop\hongfu\centre\resister\timer.c	27;"	f	line:27
+StopTimer6	C:\Users\zwq\Desktop\hongfu\centre\resister\timer.h	9;"	p	line:9	signature:()
+T1	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	306;"	l	line:306
+T2	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	307;"	l	line:307
+TEMP	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.h	34;"	e	line:34
+TRIS_DATA::TRISGbits.TRISG3	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.h	21;"	d	line:21
+TRIS_SCK::TRISGbits.TRISG2	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.h	23;"	d	line:23
+Tick_60S	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	126;"	v	line:126
+Tick_sys	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	131;"	v	line:131
+UART1_Send	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	115;"	f	line:115	signature:(unsigned char str[], int len)
+UART2_Send	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	105;"	f	line:105	signature:(unsigned char str[], int len)
+UART_Timeout	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	205;"	l	line:205
+UART_Timeout	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	291;"	l	line:291
+WORK::LATCbits.LATC13	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	32;"	d	line:32	file:
+_T6Interrupt	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	132;"	f	line:132	signature:(void)
+_U1RXInterrupt	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	201;"	f	line:201	signature:(void)
+_U2RXInterrupt	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	289;"	f	line:289	signature:(void)
+_collect_h	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.h	2;"	d	line:2
+calc_sth11	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	301;"	f	line:301	signature:(float *p_humidity ,float *p_temperature)
+calc_sth11	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.h	53;"	p	line:53	signature:(float *p_humidity ,float *p_temperature)
+checksum	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	425;"	l	line:425
+count_10	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	128;"	v	line:128
+count_100	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	130;"	v	line:130
+count_5	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	127;"	v	line:127
+count_50	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	129;"	v	line:129
+count_reset	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	51;"	v	line:51
+d_h	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	254;"	l	line:254
+d_l	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	254;"	l	line:254
+dat	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	293;"	l	line:293
+data	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	204;"	l	line:204
+day	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	423;"	l	line:423
+delay_cvt	C:\Users\zwq\Desktop\hongfu\centre\resister\spi.c	12;"	f	line:12
+error	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	109;"	l	line:109
+error	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	220;"	l	line:220
+error	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	235;"	l	line:235
+error	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	245;"	l	line:245
+error	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	255;"	l	line:255
+error	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	425;"	l	line:425
+fen	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	207;"	l	line:207
+flag_ascii_or_bin	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	72;"	v	line:72
+flag_tozero	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	91;"	v	line:91
+freq	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	74;"	v	line:74
+hour	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	423;"	l	line:423
+humi_val_i	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	424;"	l	line:424
+i	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	109;"	l	line:109
+i	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	163;"	l	line:163
+i	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	256;"	l	line:256
+i	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	78;"	l	line:78
+i	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	107;"	l	line:107
+i	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	117;"	l	line:117
+i	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	206;"	l	line:206
+i	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	292;"	l	line:292
+i	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	418;"	l	line:418
+i	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	95;"	l	line:95
+i	C:\Users\zwq\Desktop\hongfu\centre\resister\spi.c	14;"	l	line:14
+index	C:\Users\zwq\Desktop\hongfu\centre\resister\spi.c	68;"	l	line:68
+index	C:\Users\zwq\Desktop\hongfu\centre\resister\spi.c	96;"	l	line:96
+j	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	419;"	l	line:419
+j	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	95;"	l	line:95
+k	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	419;"	l	line:419
+lq	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	74;"	v	line:74
+m	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	420;"	l	line:420
+main	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	415;"	f	line:415
+miao	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	207;"	l	line:207
+minute	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	423;"	l	line:423
+month	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	423;"	l	line:423
+n	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	420;"	l	line:420
+nian	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	207;"	l	line:207
+noACK::0	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.h	32;"	d	line:32
+p	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	417;"	l	line:417
+read_temp	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	426;"	l	line:426
+receive_buf	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	294;"	l	line:294
+res	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	80;"	v	line:80
+res_x	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	82;"	v	line:82
+res_y	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	81;"	v	line:81
+rh	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	308;"	l	line:308
+rh_lin	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	310;"	l	line:310
+rh_true	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	311;"	l	line:311
+ri	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	207;"	l	line:207
+s	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	421;"	l	line:421
+s_connectionreset	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	76;"	f	line:76	signature:(void)
+s_connectionreset	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.h	48;"	p	line:48	signature:(void)
+s_measure	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	252;"	f	line:252	signature:(unsigned char *p_value, unsigned char *p_checksum, unsigned char mode)
+s_measure	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.h	52;"	p	line:52	signature:(unsigned char *p_value, unsigned char *p_checksum, unsigned char mode)
+s_read_byte	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	161;"	f	line:161	signature:(unsigned char ack)
+s_read_byte	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.h	46;"	p	line:46	signature:(unsigned char ack)
+s_read_statusreg	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	233;"	f	line:233	signature:(unsigned char *p_value, unsigned char *p_checksum)
+s_read_statusreg	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.h	50;"	p	line:50	signature:(unsigned char *p_value, unsigned char *p_checksum)
+s_softreset	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	218;"	f	line:218	signature:(void)
+s_softreset	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.h	49;"	p	line:49	signature:(void)
+s_transstart	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	18;"	f	line:18	signature:(void)
+s_transstart	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.h	47;"	p	line:47	signature:(void)
+s_write_byte	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	107;"	f	line:107	signature:(unsigned char value)
+s_write_byte	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.h	45;"	p	line:45	signature:(unsigned char value)
+s_write_statusreg	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	243;"	f	line:243	signature:(unsigned char *p_value)
+s_write_statusreg	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.h	51;"	p	line:51	signature:(unsigned char *p_value)
+second	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	423;"	l	line:423
+send_ascii	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	70;"	v	line:70
+send_data	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	69;"	v	line:69
+send_enable	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	86;"	v	line:86
+shi	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	207;"	l	line:207
+speed	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	90;"	v	line:90
+start_judge	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	287;"	v	line:287
+t	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	309;"	l	line:309
+t_C	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	312;"	l	line:312
+temp	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	422;"	l	line:422
+temp	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	78;"	v	line:78
+temp_freq	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	76;"	v	line:76
+temp_val_i	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	424;"	l	line:424
+tick	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	125;"	v	line:125
+uart1_enable	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	88;"	v	line:88
+uart2_enable	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	87;"	v	line:87
+val	C:\Users\zwq\Desktop\hongfu\centre\resister\collect.c	163;"	l	line:163
+work_enable	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	85;"	v	line:85
+year	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	423;"	l	line:423
+yue	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	207;"	l	line:207
+z	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	417;"	l	line:417
+zero	C:\Users\zwq\Desktop\hongfu\centre\resister\main.c	83;"	v	line:83
